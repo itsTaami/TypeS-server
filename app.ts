@@ -11,7 +11,7 @@ const dbUri = process.env.DATABASE_URI || "";
 
 const app: Application = express();
 
-app.use(cors());
+// app.use(cors());
 
 app.use("/movies", movieRoutes);
 

@@ -1,4 +1,9 @@
 import { Schema, model } from "mongoose";
+interface IAwards {
+  wins: number;
+  nominations: number;
+  text: String;
+}
 interface IMovie {
   title: String;
   genre: [String];
@@ -10,11 +15,7 @@ interface IMovie {
   released: Date;
   directors: [String];
   rated: String;
-  awards: {
-    wins: number;
-    nominations: number;
-    text: String;
-  };
+  awards: IAwards;
   lastupdated: Date;
   year: number;
   imdb: {
