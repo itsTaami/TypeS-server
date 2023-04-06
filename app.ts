@@ -5,11 +5,10 @@ import connectDB from "./config/mongodb";
 import movieRoutes from "./routes/movieRoutes";
 
 dotenv.config();
+const app: Application = express();
 
 const PORT = process.env.PORT;
 const dbUri = process.env.DATABASE_URI || "";
-
-const app: Application = express();
 
 // app.use(cors());
 

@@ -33,27 +33,7 @@ interface IMovie {
   lastUpdated: Date;
 }
 
-const movieSchema = new Schema<IMovie>({
-  //   title: { type: String, required: true },
-  //   genre: { type: [String], required: true },
-  //   runtime: { type: Number, required: true },
-  //   cast: { type: [String], required: true },
-  //   poster: { type: String, required: true },
-  //   plot: { type: String, required: true },
-  //   languages: { type: [String], required: true },
-  //   released: { type: Date, required: true },
-  //   directors: { type: [String], required: true },
-  //   rated: { type: String, required: true },
-  //   awards: {},
-  //   lastupdated: { type: Date, required: true },
-  //   year: { type: Number, required: true },
-  //   imdb: {},
-  //   countries: { type: [String], required: true },
-  //   tomatoes: {},
-  //   critic: {},
-  //   rotten: { type: Number },
-  //   lastUpdated: { type: Date },
-});
+const movieSchema = new Schema<IMovie>({});
 
 const movie = model("Movie", movieSchema);
 
